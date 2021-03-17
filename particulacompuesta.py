@@ -14,9 +14,11 @@ class ParticulaCompuesta:
         for particula in self.__particulas:
             print(particula)
 
-p = Particula(111, 4, 5, 6, 7, 8, 9, 9, 10.8)
+p = Particula(1, 4, 5, 6, 7, 8, 9, 9)
+p1 = Particula(2, 3, 5, 8, 1, 20, 65, 87, 98)
 print(p)
 pc = ParticulaCompuesta()
-pc.agregar_final(p)
+pc.agregar_final(p1)
 pc.agregar_inicio(p)
+pc.agregar_inicio(p1)
 pc.mostrar()
